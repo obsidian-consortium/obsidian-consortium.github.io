@@ -3,98 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Obsidian Consortium | Sovereign Strategic Alliance</title>
+  <title>The Obsidian Consortium | Strategic Advisory & Governance</title>
   <style>
     :root {
-      --bg: #090a0c;
-      --text-main: #d1d5db;
-      --text-muted: #6b7280;
-      --accent: #9ca3af;
-      --border: #1f242d;
+      --bg: #0b0d10;
+      --card-bg: #12161c;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #d1d5db;
+      --border: #232936;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background-color: var(--bg);
-      color: var(--text-main);
+      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 40px 20px;
+      padding: 60px 24px;
     }
     .container {
-      max-width: 680px;
+      max-width: 720px;
       width: 100%;
       text-align: center;
-      margin-top: auto;
-      margin-bottom: auto;
+      margin: auto 0;
     }
     .crest {
-      font-size: 28px;
+      font-size: 24px;
       color: var(--accent);
-      margin-bottom: 24px;
-      letter-spacing: 2px;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
     }
     h1 {
       font-size: 22px;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 500;
       color: #ffffff;
       margin-bottom: 12px;
     }
     .subline {
       font-size: 13px;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--muted);
       margin-bottom: 40px;
     }
     .statement {
       font-size: 15px;
       line-height: 1.8;
-      color: var(--text-main);
+      color: var(--text);
       margin-bottom: 36px;
       font-weight: 300;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 24px 10px;
+      padding: 28px 14px;
     }
     .nodes {
       font-size: 12px;
       letter-spacing: 0.2em;
-      color: var(--accent);
+      color: var(--muted);
       text-transform: uppercase;
       margin-bottom: 40px;
     }
-    .signatory-box {
-      background: #0d1117;
+    .director-card {
+      background: var(--card-bg);
       border: 1px solid var(--border);
-      padding: 20px;
-      border-radius: 4px;
+      padding: 24px;
+      border-radius: 6px;
       text-align: left;
-      margin-bottom: 40px;
-      font-size: 13px;
-      line-height: 1.6;
+      margin-bottom: 36px;
     }
-    .signatory-title {
+    .card-label {
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.15em;
-      color: var(--text-muted);
-      margin-bottom: 6px;
+      color: var(--muted);
+      margin-bottom: 8px;
     }
-    .signatory-name {
+    .director-name {
       color: #ffffff;
+      font-size: 16px;
       font-weight: 500;
-      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .director-role {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
     }
     .portal-btn {
       display: inline-block;
       background: transparent;
-      color: var(--accent);
+      color: #ffffff;
       border: 1px solid var(--border);
       padding: 12px 28px;
       font-size: 12px;
@@ -102,7 +106,7 @@
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.3s ease;
-      text-decoration: none;
+      border-radius: 4px;
     }
     .portal-btn:hover {
       background: #ffffff;
@@ -112,9 +116,10 @@
     footer {
       font-size: 11px;
       letter-spacing: 0.1em;
-      color: var(--text-muted);
+      color: var(--muted);
       text-align: center;
       margin-top: 40px;
+      line-height: 1.8;
     }
   </style>
 </head>
@@ -123,34 +128,35 @@
   <div class="container">
     <div class="crest">&#9670;</div>
     <h1>The Obsidian Consortium</h1>
-    <div class="subline">Sovereign Strategic Alliance</div>
+    <div class="subline">Transnational Strategic Governance & Advisory</div>
 
     <div class="statement">
-      Operating as a polycentric, decentralized institutional alliance for transnational ethics and long-range structural integrity. Deliberations are conducted under strict non-partisan Chatham House covenants.
+      Providing cross-border structural advisory, ethical governance frameworks, and strategic alignment for sovereign and institutional entities. Advisory engagements are retained exclusively via direct institutional mandate.
     </div>
 
     <div class="nodes">
-      Geneva &bull; Zurich &bull; London &bull; Tokyo &bull; Singapore &bull; Indian Ocean Basin
+      Zurich &bull; London &bull; Singapore &bull; Dubai &bull; South Asia
     </div>
 
-    <div class="signatory-box">
-      <div class="signatory-title">Designated Regional Registry</div>
-      <div class="signatory-name">Muhammed Saeed A. M.</div>
-      <div style="color: var(--text-muted); font-size: 12px; margin-top: 4px;">
-        Territorial Trustee & Signatory &bull; South Asia Jurisdiction
+    <div class="director-card">
+      <div class="card-label">Territorial Advisory Registry</div>
+      <div class="director-name">Muhammed Saeed A. M.</div>
+      <div class="director-role">
+        Territorial Director & Lead Strategist &bull; South Asia & Indian Ocean Desk
       </div>
-      <div style="color: #4ade80; font-size: 11px; margin-top: 8px;">
-        &bull; Node Status: Verified / Active
+      <div style="margin-top: 12px; font-family: monospace; font-size: 11px; color: #9ca3af; border-top: 1px dashed #232936; padding-top: 10px;">
+        Registry Identifier: <span style="color: #ffffff;">SAR-DIR-0941</span><br>
+        Direct Institutional Channel: <span style="color: #60a5fa;">obsidian.consortium@proton.me</span>
       </div>
     </div>
 
-    <button class="portal-btn" onclick="alert('Restricted Protocol: Multi-factor Hardware Token or 64-character Node Key required for interface access.')">
-      Delegate Terminal Access
+    <button class="portal-btn" onclick="alert('Client Portal: Institutional credentials required. Access is restricted to active retainers.')">
+      Institutional Client Portal
     </button>
   </div>
 
   <footer>
-    Institutional Anonymity Preserved &bull; Zero Public Solicitation Protocol &bull; 2026
+    Private Institutional Mandate Only &bull; Zero Retail Solicitation &bull; 2026
   </footer>
 
 </body>
